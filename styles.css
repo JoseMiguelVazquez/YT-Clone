@@ -24,6 +24,7 @@ button:hover, .YT-logo:hover, .video:hover {
     cursor: pointer;
 }
 
+
 .nav-left {
     display: flex;
     align-items: center;
@@ -164,7 +165,7 @@ aside button i {
     width: 19vw;
     margin: 10px 5px 30px 10px;
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 20% 80%;
     grid-template-rows: auto auto;
     transition-duration: 500ms;
     transition-delay: 300ms;
@@ -185,6 +186,8 @@ aside button i {
 .channel-logo {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    width: 70%;
+    margin: 2px auto auto 3px;;
 }
 
 .video-info-container {
@@ -210,6 +213,9 @@ aside button i {
 }
 
 @media screen and (max-width:1200px) {
+    .nav-left button {
+        margin-left: 10px;
+    }
     .fb12, .fb11 {
         display: none;
     }
@@ -242,6 +248,9 @@ aside button i {
 }
 
 @media screen and (max-width:1000px) {
+    .nav-left button {
+        margin-left: 3px;
+    }
     .fb10, .fb9 {
         display: none;
     }
@@ -275,6 +284,9 @@ aside button i {
 }
 
 @media screen and (max-width:750px) {
+    .nav-left button {
+        margin-left: 0px;
+    }
     .video {
         width: 38vw;
     }
@@ -299,6 +311,9 @@ aside button i {
 }
 
 @media screen and (max-width:620px) {
+    .nav-left button {
+        display: none;
+    }
     .video-title {
         font-size: 0.8rem;
     }
@@ -317,9 +332,6 @@ aside button i {
 }
 
 @media screen and (max-width:480px) {
-    .nav-left button {
-        display: none;
-    }
     .mic-button {
         display: none;
     }
@@ -353,11 +365,12 @@ aside button i {
     .fb5 {
         display: none;
     }
-    .video{
-        margin: 0 0 20px 0;
+    .videos {
+        padding: 0;
     }
     .video {
         width: 100vw;
+        margin: 0 0 20px 0;
     }
     .video-title {
         font-size: 1.5rem;

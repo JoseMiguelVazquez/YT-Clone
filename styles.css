@@ -1,0 +1,370 @@
+/*RESET*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 10px;
+    height: 40px;
+}
+
+button:hover, .YT-logo:hover, .video:hover {
+    cursor: pointer;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.25rem;
+    border: none;
+    background-color: white;
+    margin-right: 15px;
+}
+
+.YT-logo img {
+    width: 100px;
+}
+
+.nav-center {
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
+.search-input {
+    width: 70%;
+    height: 40px;
+    font-size: 1rem;
+    padding-left: 5px;
+    border: 0.5px solid rgb(194, 192, 192);
+    border-right: none;
+}
+
+.search-button {
+    width: 60px;
+    height: 40px;
+    background-color: rgba(247, 247, 247, 0.959);
+    font-size: 1.1rem;
+    margin: 0 10px 0 0;
+    border: 0.5px solid rgb(194, 192, 192);
+}
+
+.mic-button {
+    background-color: rgba(247, 247, 247, 0.959);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    border: none;
+}
+
+.nav-right {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.nav-right button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.25rem;
+    border: none;
+    background-color: white;
+    margin-right: 15px;
+}
+
+
+main {
+    display: flex;
+}
+
+aside {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 12%;
+}
+
+aside button {
+    height: 70px;
+    border: none;
+    display: flex;
+    background-color: white;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+aside button:hover, .search-button:hover, .filter-bar button:hover {
+    background-color: rgb(233, 233, 233);
+}
+
+aside button i {
+    font-size: 1.25rem;
+    margin: 0 15px 0 20px;
+    justify-self: flex-start;
+}
+
+.video-container {
+    width: 88%;
+}
+
+.filter-bar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+
+.filter-bar button {
+    background-color: rgba(247, 247, 247, 0.959);
+    border: 0.5px solid rgb(194, 192, 192);
+    border-radius: 50px;
+    padding: 7px 10px;
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+.filter-bar button:first-of-type {
+    background-color: rgb(19, 19, 19);
+    color: white;
+}
+
+.filter-bar button:last-of-type {
+    border: none;
+    background-color: white;
+}
+
+.videos {
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.video {
+    width: 270px;
+    margin: 10px 5px 15px 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    transition-duration: 500ms;
+}
+
+.video:hover {
+    transform: scale(1.1);
+}
+
+.video-img {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    object-fit: contain;
+    width: 270px;
+    margin-bottom: 10px;
+}
+
+.channel-logo {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.video-info-container {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.video-title {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.channel, .views {
+    font-size: 0.75rem;
+}
+
+@media screen and (max-width:1550px) {
+    .fb14, .fb13 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    aside {
+        width: 8%;
+    }
+    .video-container {
+        width: 92%;
+    }
+    aside button {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+    aside button i {
+        margin-bottom: 8px;
+    }
+    aside button p {
+        font-size: 0.7rem;
+    }
+    .fb12, .fb11 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .fb10, .fb9 {
+        display: none;
+    }
+    .video, .video-img {
+        width: 230px;
+    }
+    .video-title {
+        font-size: 0.95rem;
+    }
+    .channel, .views {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width:860px) {
+    .nav-right button {
+        display: none;
+    }
+    .nav-right button:last-of-type {
+        display: inline;
+    }
+    aside button p {
+        display: none;
+    }
+    .fb8 {
+        display: none;
+    }
+    .video, .video-img {
+        width: 200px;
+    }
+    .video-title {
+        font-size: 0.8rem;
+    }
+    .channel, .views {
+        font-size: 0.60rem;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .video, .video-img {
+        width: 270px;
+    }
+    .video-title {
+        font-size: 1rem;
+    }
+    .channel, .views {
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .fb7 {
+        display: none;
+    }
+    .video, .video-img {
+        width: 250px;
+    }
+    .video-title {
+        font-size: 0.95rem;
+    }
+    .channel, .views {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .video, .video-img {
+        width: 220px;
+    }
+    .video-title {
+        font-size: 0.8rem;
+    }
+    .channel, .views {
+        font-size: 0.60rem;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .video, .video-img {
+        width: 180px;
+    }
+    .video-title {
+        font-size: 0.75rem;
+    }
+    .channel, .views {
+        font-size: 0.55rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .nav-left button {
+        display: none;
+    }
+    .mic-button {
+        display: none;
+    }
+    aside {
+        display: none;
+    }
+    .fb6 {
+        display: none;
+    }
+    .video-container {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width:430px) {
+    .nav-center {
+        justify-content: flex-end;
+    }
+    .search-input {
+        display: none;
+    }
+    .search-button {
+        border: none;
+        margin: 0;
+        background-color: white;
+    }
+    .fb5 {
+        display: none;
+    }
+    .video{
+        margin: 0 0 20px 0;
+    }
+    .video, .video-img {
+        width: 100vw;
+    }
+    .video-title {
+        font-size: 1.5rem;
+    }
+    .channel, .views {
+        font-size: 1rem;
+    }
+}
+

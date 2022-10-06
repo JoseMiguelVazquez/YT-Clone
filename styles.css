@@ -222,10 +222,11 @@ aside button i {
         justify-content: center;
     }
     aside button i {
-        margin-bottom: 8px;
+        margin: auto auto 5px auto;
     }
     aside button p {
         font-size: 0.7rem;
+        margin: 2px auto auto auto;
     }
     .video-container {
         width: 92%;
@@ -255,6 +256,9 @@ aside button i {
     }
     .nav-right button:last-of-type {
         display: inline;
+    }
+    aside button i  {
+        margin: auto;
     }
     aside button p {
         display: none;

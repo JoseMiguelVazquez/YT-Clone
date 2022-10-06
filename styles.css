@@ -16,8 +16,11 @@ nav {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    margin: 10px;
-    height: 40px;
+    padding: 0 10px;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 60px;
 }
 
 button:hover, .YT-logo:hover, .video:hover {
@@ -94,12 +97,17 @@ button:hover, .YT-logo:hover, .video:hover {
 
 main {
     display: flex;
+    flex-flow: row nowrap;
+    padding-top: 58px;
 }
 
 aside {
     display: flex;
     flex-flow: column nowrap;
     width: 12%;
+    height: 100%;
+    position: fixed;
+    background-color: white;;
 }
 
 aside button {
@@ -129,6 +137,10 @@ aside button i {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 52px;
 }
 
 

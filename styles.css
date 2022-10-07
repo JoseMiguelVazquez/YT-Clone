@@ -21,6 +21,7 @@ nav {
     background-color: white;
     width: 100%;
     height: 60px;
+    z-index: 3;
 }
 
 button:hover, .YT-logo:hover, .video:hover {
@@ -99,6 +100,7 @@ main {
     display: flex;
     flex-flow: row nowrap;
     padding-top: 58px;
+    position: relative;
 }
 
 aside {
@@ -107,7 +109,8 @@ aside {
     width: 12%;
     height: 100%;
     position: fixed;
-    background-color: white;;
+    background-color: white;
+    z-index: 2;
 }
 
 aside button {
@@ -131,6 +134,8 @@ aside button i {
 
 .video-container {
     width: 88%;
+    position: absolute;
+    right: 0;
 }
 
 .filter-bar {
@@ -141,6 +146,7 @@ aside button i {
     background-color: white;
     width: 100%;
     height: 52px;
+    z-index: 2;
 }
 
 
@@ -171,6 +177,7 @@ aside button i {
     justify-content: center;
     align-items: center;
     align-content: center;
+    
 }
 
 .video {

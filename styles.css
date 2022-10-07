@@ -333,6 +333,7 @@ aside button i {
 @media screen and (max-width:680px) {
     .fb7 {
         display: none;
+    }
 }
 
 @media screen and (max-width:620px) {
@@ -403,12 +404,6 @@ aside button i {
         width: 100vw;
         margin: 0 0 20px 0;
     }
-    /*.video-title {
-        font-size: 1.5rem;
-    }
-    .channel, .views {
-        font-size: 1rem;
-    }*/
 }
 
 /*SCROLLBAR STYLES*/

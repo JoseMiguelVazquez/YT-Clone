@@ -116,7 +116,7 @@ aside {
 }
 
 aside button {
-    height: 70px;
+    height: 50px;
     border: none;
     display: flex;
     background-color: white;
@@ -259,10 +259,10 @@ aside button i {
         display: none;
     }
     aside {
-        width: 12%;
+        width: 13%;
     }
     .video-container {
-        width: 88%;
+        width: 87%;
     }
 }
 
@@ -277,6 +277,7 @@ aside button i {
         width: 8%;
     }
     aside button {
+        height: 70px;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;

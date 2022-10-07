@@ -210,7 +210,7 @@ aside button i {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     width: 70%;
-    margin: 2px auto auto 3px;;
+    margin: 0 auto auto 2px;;
 }
 
 .video-info-container {
@@ -224,8 +224,16 @@ aside button i {
     margin-bottom: 5px;
 }
 
+.channel {
+    margin-bottom: 3px;
+}
+
 .channel, .views {
     font-size: 0.75rem;
+}
+
+.mobile-dot {
+    display: none;
 }
 
 @media screen and (max-width:1550px) {
@@ -402,8 +410,27 @@ aside button i {
     }
     .video {
         width: 100vw;
-        margin: 0 0 20px 0;
+        margin: 0 0 15px 0;
     }
+    .channel-logo {
+        width: 55%;
+        margin: auto;
+    }
+    .video-info-container {
+        margin: auto auto auto 0;
+    }
+    .video-title {
+        font-size: 0.95rem;
+        margin-bottom: 0;
+    }
+    .channel, .views {
+        font-size: 0.7rem;
+        display: inline;
+    }
+    .mobile-dot {
+        display: inline;
+    }
+
 }
 
 /*SCROLLBAR STYLES*/

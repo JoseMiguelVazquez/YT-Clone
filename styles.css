@@ -6,7 +6,7 @@
 }
 
 body {
-    width: 100vw;
+    width: 100%;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 300;
@@ -15,7 +15,6 @@ body {
 nav {
     display: flex;
     flex-flow: row nowrap;
-    /*justify-content:space-between;*/
     padding: 0 10px;
     position: fixed;
     background-color: white;
@@ -54,8 +53,6 @@ button:hover, .YT-logo:hover, .video:hover {
     width: 60%;
     align-items: center;
     justify-content: center;
-    /*margin-left: auto;
-    margin-right: auto;*/
 }
 
 .search-input {
@@ -110,9 +107,10 @@ main {
 aside {
     display: flex;
     flex-flow: column nowrap;
-    width: 12vw;
+    width: 12%;
     height: 100%;
     position: fixed;
+    left: 0px;
     background-color: white;
     z-index: 2;
 }
@@ -137,9 +135,9 @@ aside button i {
 }
 
 .video-container {
-    width: 88vw;
+    width: 88%;
     position: absolute;
-    right: 0;
+    right: 0px;
 }
 
 .filter-bar {
@@ -148,7 +146,7 @@ aside button i {
     justify-content: space-evenly;
     position: fixed;
     background-color: white;
-    width: 88vw;
+    width: 88%;
     height: 52px;
     z-index: 2;
     border-top: 1px solid rgb(224, 223, 223);
@@ -184,7 +182,6 @@ aside button i {
     align-items: center;
     align-content: center;
     margin-top: 52px;
-    
 }
 
 .video {
@@ -231,7 +228,6 @@ aside button i {
     font-size: 0.75rem;
 }
 
-
 @media screen and (max-width:1550px) {
     .fb14, .fb13 {
         display: none;
@@ -246,7 +242,7 @@ aside button i {
         display: none;
     }
     aside {
-        width: 8vw;
+        width: 8%;
     }
     aside button {
         display: flex;
@@ -261,7 +257,7 @@ aside button i {
         margin: 2px auto auto auto;
     }
     .filter-bar, .video-container {
-        width: 92vw;
+        width: 92%;
     }
     .video-title {
         font-size: 0.90rem;
@@ -269,8 +265,6 @@ aside button i {
     .channel, .views {
         font-size: 0.7rem;
     }
-    
-
 }
 
 @media screen and (max-width:1000px) {
@@ -368,7 +362,7 @@ aside button i {
         display: none;
     }
     .filter-bar, .video-container {
-        width: 100vw;
+        width: 100%;
     }
     .video {
         width: 40vw;
@@ -406,3 +400,22 @@ aside button i {
     }
 }
 
+/*SCROLLBAR STYLES*/
+html::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+ }
+
+html::-webkit-scrollbar-track {
+    background-color: rgb(240, 240, 240);
+    margin: 5px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #4e4e4e;
+    border-radius: 25px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background: rgb(148, 147, 147);
+}

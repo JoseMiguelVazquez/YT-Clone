@@ -107,7 +107,7 @@ main {
 aside {
     display: flex;
     flex-flow: column nowrap;
-    width: 12%;
+    width: 10%;
     height: 100%;
     position: fixed;
     left: 0px;
@@ -135,7 +135,7 @@ aside button i {
 }
 
 .video-container {
-    width: 88%;
+    width: 90%;
     position: absolute;
     right: 0px;
 }
@@ -236,9 +236,33 @@ aside button i {
     display: none;
 }
 
+@media screen and (min-width:2000px) {
+    aside {
+        width: 9%;
+    }
+    .video-container {
+        width: 91%;
+    }
+    .video {
+        width: 17vw;
+    }
+    .video-title {
+        font-size: 1.2rem;
+    }
+    .channel, .views {
+        font-size: 1rem;
+    }
+}
+
 @media screen and (max-width:1550px) {
     .fb14, .fb13 {
         display: none;
+    }
+    aside {
+        width: 12%;
+    }
+    .video-container {
+        width: 88%;
     }
 }
 

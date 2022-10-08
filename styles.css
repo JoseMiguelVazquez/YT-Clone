@@ -57,6 +57,7 @@ button:hover, .YT-logo:hover, .video:hover {
 
 .search-input {
     width: 70%;
+    max-width: 580px;
     height: 40px;
     font-size: 1rem;
     padding-left: 5px;
@@ -185,7 +186,7 @@ aside button i {
     width: 19.5vw;
     margin: 10px 7.5px 30px 7.5px;
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 15% 85%;
     grid-template-rows: 11.6vw auto;
     transition-duration: 500ms;
     transition-delay: 400ms;
@@ -233,6 +234,8 @@ aside button i {
     display: none;
 }
 
+/*DESIGNED FOR VW OF 1550 TO 2000PX, DIFERENT VW DESCRIBED BELOW:*/
+
 @media screen and (min-width:2000px) {
     aside {
         width: 9%;
@@ -259,6 +262,9 @@ aside button i {
     aside {
         width: 13%;
     }
+    .video {
+        grid-template-columns: 20% 80%;
+    }
     .video-container {
         width: 87%;
     }
@@ -284,7 +290,7 @@ aside button i {
         margin: auto auto 5px auto;
     }
     aside button p {
-        font-size: 0.7rem;
+        font-size: 0.65rem;
         margin: 2px auto auto auto;
     }
     .filter-bar, .video-container {
@@ -328,11 +334,8 @@ aside button i {
 }
 
 @media screen and (max-width:860px) {
-    .nav-right button {
+    .upload, .notifications {
         display: none;
-    }
-    .nav-right button:last-of-type {
-        display: inline;
     }
     aside button i  {
         margin: auto;

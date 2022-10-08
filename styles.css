@@ -3,6 +3,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    /*border: 1px solid red;*/
 }
 
 body {
@@ -434,7 +435,24 @@ aside button i {
         display: none;
     }
     aside {
-        display: none;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        width: 100vw;
+        height: 60px;
+        bottom: 0px;
+        background-color: rgb(255, 255, 255, 0.85);
+    }
+    aside button {
+        height: 100%;
+        width: 20vw;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255, 0.85);
+    }
+    aside button p {
+        display: block;
+    }
+    aside button i {
+        margin-bottom: 2px;
     }
     .fb6 {
         display: none;

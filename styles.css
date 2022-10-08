@@ -10,6 +10,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 300;
+    color:rgb(24, 24, 24);
 }
 
 nav {
@@ -192,6 +193,12 @@ aside button i {
     transition-delay: 400ms;
 }
 
+.videos::before {
+    content: "";
+    width: 19.5vw;
+    margin: 10px 7.5px 30px 7.5px;
+}
+
 .video:hover {
     transform: scale(1.1);
 }
@@ -247,6 +254,9 @@ aside button i {
         width: 17vw;
         grid-template-rows: 10.5vw auto;
     }
+    .videos::before {
+        width: 17vw;
+    }
     .video-title {
         font-size: 1.2rem;
     }
@@ -300,6 +310,9 @@ aside button i {
         width: 20vw;
         grid-template-rows: 12vw auto;
     }
+    .videos::before {
+        width: 20vw;
+    }
     .video-title {
         font-size: 0.90rem;
     }
@@ -319,6 +332,9 @@ aside button i {
         width: 26vw;
         grid-template-rows: 15.7vw auto;
     }
+    .videos::before {
+        width: 26vw;
+    }
     .videos::after {
         content: "";
         width: 27vw;
@@ -330,6 +346,9 @@ aside button i {
     .video {
         width: 27vw;
         grid-template-rows: 16.5vw auto;
+    }
+    .videos::before {
+        width: 27vw;
     }
 }
 
@@ -349,6 +368,9 @@ aside button i {
     .video {
         width: 38vw;
         grid-template-rows: 23vw auto;
+    }
+    .videos::before {
+        width: 38vw;
     }
     .video-title {
         font-size: 1rem;
@@ -413,6 +435,10 @@ aside button i {
     .video {
         width: 65vw;
         grid-template-rows: 38.5vw auto;
+    }
+    .videos::before {
+        width: 0px;
+        margin: 0px;
     }
     .video-title {
         font-size: 1rem;

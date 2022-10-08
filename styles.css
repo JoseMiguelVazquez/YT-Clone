@@ -40,6 +40,7 @@ button:hover, .YT-logo:hover, .video:hover {
     width: 40px;
     height: 40px;
     font-size: 1.25rem;
+    color:#3b3b3b;
     border: none;
     background-color: white;
     margin-right: 15px;
@@ -71,6 +72,7 @@ button:hover, .YT-logo:hover, .video:hover {
     height: 40px;
     background-color: rgba(247, 247, 247, 0.959);
     font-size: 1.1rem;
+    color:#3b3b3b;
     margin: 0 10px 0 0;
     border: 0.5px solid rgb(194, 192, 192);
 }
@@ -95,6 +97,7 @@ button:hover, .YT-logo:hover, .video:hover {
     width: 40px;
     height: 40px;
     font-size: 1.25rem;
+    color:#3b3b3b;
     border: none;
     background-color: white;
     margin: 0 7.5px;
@@ -131,6 +134,7 @@ aside button:hover, .search-button:hover, .filter-bar button:hover {
 
 aside button i {
     font-size: 1.25rem;
+    color:#3b3b3b;
     margin: 0 15px 0 20px;
     justify-self: flex-start;
 }
@@ -159,10 +163,13 @@ aside button i {
     background-color: rgba(247, 247, 247, 0.959);
     border: 0.5px solid rgb(194, 192, 192);
     border-radius: 50px;
-    padding: 7px 10px;
+    padding: 5px 10px;
     margin: 10px 0;
     font-size: 0.9rem;
+    color:#3b3b3b;
+    font-weight: 400;
 }
+
 
 .filter-bar button:first-of-type {
     background-color: rgb(19, 19, 19);
@@ -225,7 +232,7 @@ aside button i {
 
 .video-title {
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 5px;
 }
 
@@ -235,6 +242,8 @@ aside button i {
 
 .channel, .views {
     font-size: 0.75rem;
+    font-weight: 400;
+    color: #5c5c5c;
 }
 
 .mobile-dot {

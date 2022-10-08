@@ -186,7 +186,7 @@ aside button i {
     margin: 10px 7.5px 30px 7.5px;
     display: grid;
     grid-template-columns: 20% 80%;
-    grid-template-rows: auto auto;
+    grid-template-rows: 11.6vw auto;
     transition-duration: 500ms;
     transition-delay: 300ms;
 }
@@ -200,7 +200,6 @@ aside button i {
     grid-row: 1 / 2;
     object-fit: contain;
     width: 100%;
-    height: 164px;
     margin-bottom: 10px;
 }
 
@@ -243,6 +242,7 @@ aside button i {
     }
     .video {
         width: 17vw;
+        grid-template-rows: 10.5vw auto;
     }
     .video-title {
         font-size: 1.2rem;
@@ -292,6 +292,7 @@ aside button i {
     }
     .video {
         width: 20vw;
+        grid-template-rows: 12vw auto;
     }
     .video-title {
         font-size: 0.90rem;
@@ -310,12 +311,14 @@ aside button i {
     }
     .video {
         width: 26vw;
+        grid-template-rows: 15.7vw auto;
     }
 }
 
 @media screen and (max-width: 970px) {
     .video {
         width: 27vw;
+        grid-template-rows: 16.5vw auto;
     }
 }
 
@@ -337,6 +340,7 @@ aside button i {
     }
     .video {
         width: 38vw;
+        grid-template-rows: 23vw auto;
     }
     .video-title {
         font-size: 1rem;
@@ -349,9 +353,6 @@ aside button i {
 @media screen and (max-width:750px) {
     .nav-left button {
         margin-left: 0px;
-    }
-    .video {
-        width: 38vw;
     }
     .video-title {
         font-size: 0.95rem;
@@ -403,6 +404,7 @@ aside button i {
     }
     .video {
         width: 65vw;
+        grid-template-rows: 38.5vw auto;
     }
     .video-title {
         font-size: 1rem;
@@ -433,14 +435,15 @@ aside button i {
     }
     .video {
         width: 100vw;
-        margin: 0 0 15px 0;
+        grid-template-rows: 59vw auto;
+        margin: 0 0 18px 0;
     }
     .channel-logo {
         width: 55%;
-        margin: auto;
+        margin: 0 auto auto auto;
     }
     .video-info-container {
-        margin: auto auto auto 0;
+        margin: 3px auto auto 0;
     }
     .video-title {
         font-size: 0.95rem;

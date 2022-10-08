@@ -188,7 +188,7 @@ aside button i {
     grid-template-columns: 20% 80%;
     grid-template-rows: 11.6vw auto;
     transition-duration: 500ms;
-    transition-delay: 300ms;
+    transition-delay: 400ms;
 }
 
 .video:hover {
@@ -312,6 +312,11 @@ aside button i {
     .video {
         width: 26vw;
         grid-template-rows: 15.7vw auto;
+    }
+    .videos::after {
+        content: "";
+        width: 27vw;
+        margin: 10px 7.5px 30px 7.5px;
     }
 }
 
